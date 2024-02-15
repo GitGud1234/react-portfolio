@@ -13,7 +13,7 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/react-portfolio" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<ProjectDisplay />} />
           <Route path="/blogs" element={<Blogs />} />
