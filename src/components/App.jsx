@@ -13,10 +13,10 @@ function App() {
     <div className="App">
       <HashRouter>
         <NavBar />
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/projects/:id" element={<ProjectDisplay />} />
-          <Route path="/blogs" element={<Blogs />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:id" element={<ProjectDisplay />} />
+        <Route path="/blogs" element={<Blogs />} />
       </HashRouter>
       <Footer />
     </div>
@@ -34,6 +34,6 @@ function App() {
         </Routes>
       </Router>
       <Footer />
-*/ */
+*/
 
 export default App;
