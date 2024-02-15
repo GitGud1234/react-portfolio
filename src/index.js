@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/App';
-import { BrowserRouter } from 'react-router-dom';
+//import { HashRouter as Router } from 'react-router-dom';
 
 //import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  //<BrowserRouter basename="/react-portfolio">
+  //<Router>
   <App />
-  // </BrowserRouter>
+  //</Router>
 );
 
 // If you want to start measuring performance in your app, pass a function

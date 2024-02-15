@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-//import { HashRouter, Route } from 'react-router-dom';
+//import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import Projects from '../pages/Projects';
 import Blogs from '../pages/Blogs';
@@ -27,14 +27,14 @@ function App() {
 }
 
 /*
-      <HashRouter>
+          <HashRouter>
         <NavBar />
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<ProjectDisplay />} />
         <Route path="/blogs" element={<Blogs />} />
       </HashRouter>
-      <Footer />
+      <Footer />       
      
 */
 
