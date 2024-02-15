@@ -7,6 +7,7 @@ import Blogs from '../pages/Blogs';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import ProjectDisplay from '../pages/ProjectDisplay';
+import '../styles/App.css';
 
 function App() {
   return (
