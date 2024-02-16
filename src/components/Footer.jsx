@@ -14,7 +14,7 @@ function Footer() {
         <GitHubIcon />
         <LinkedInIcon />
       </div>
-      <p>&copy; {currentYear} website-URL</p>
+      <p>gitgud1234.github.io/react-portfolio &copy; {currentYear} </p>
     </footer>
   );
 }
