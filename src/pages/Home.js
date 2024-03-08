@@ -1,33 +1,35 @@
 import React from 'react';
 import '../styles/Home.css';
+import { Paper, Grid } from '@mui/material';
 
 function Home() {
   return (
     <div className="home">
-      <div className="about">
-        <h2>About me section</h2>
+      <div className="landing">
+        <h1>Hi, I am Gelmis</h1>
         <div className="prompt">
-          <p>Web Developer</p>
+          <p>
+            An <span style={{ color: '#EC8F1B' }}>aspiring developer</span>{' '}
+            trying to break into the tech industry
+          </p>
         </div>
-      </div>
-      <div className="skills">
-        <h1>Skills</h1>
-        <ul className="list">
-          <li className="item">
-            <h2>Front-End</h2>
-            <span>
-              ReactJS, HTML, CSS, JavaScript, TypeScript, JQuery, BootStrap,
-              MaterialUI
-            </span>
-          </li>
-          <li className="item">
-            <h2>Back-End</h2>
-            <span>NodeJS, ExpressJS, NextJS</span>
-          </li>
-        </ul>
       </div>
     </div>
   );
 }
+
+/*
+        <ul className="list">
+            <li className="item">
+              <h2>A passion for learning</h2>
+              <span>Always keen on learning and growing. </span>
+            </li>
+
+            <li className="item">
+              <h2>Aspiring developer</h2>
+              <span></span>
+            </li>
+          </ul>
+*/
 
 export default Home;
