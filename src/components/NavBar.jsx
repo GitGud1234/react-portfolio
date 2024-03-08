@@ -13,9 +13,10 @@ import {
 import HomeIcon from '@mui/icons-material/Home';
 //import LogoDevIcon from '@mui/icons-material/LogoDev';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import ArticleIcon from '@mui/icons-material/Article';
+import CodeIcon from '@mui/icons-material/Code';
 
 function NavBar() {
-  const location = useLocation();
   return (
     <AppBar position="sticky">
       <Toolbar>
@@ -35,12 +36,24 @@ function NavBar() {
           direction="row"
           spacing={5}
           justifyContent="center"
-          sx={{ width: '100%', outline: '2px solid red;' }}
+          sx={{ width: '100%' }}
         >
-          <Button component={Link} to="/projects" disableRipple color="inherit">
+          <Button
+            startIcon={<CodeIcon fontSize="large" />}
+            component={Link}
+            to="/projects"
+            disableRipple
+            color="inherit"
+          >
             projects
           </Button>
-          <Button component={Link} to="/blogs" disableRipple color="inherit">
+          <Button
+            startIcon={<ArticleIcon fontSize="large" />}
+            component={Link}
+            to="/blogs"
+            disableRipple
+            color="inherit"
+          >
             Blogs
           </Button>
         </Stack>
