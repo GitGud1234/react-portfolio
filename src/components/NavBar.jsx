@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/NavBar.css';
-import ReorderIcon from '@mui/icons-material/Reorder';
 import {
   AppBar,
   Toolbar,
   IconButton,
-  Typography,
+  //Typography,
   Stack,
   Button,
 } from '@mui/material';
@@ -15,6 +14,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArticleIcon from '@mui/icons-material/Article';
 import CodeIcon from '@mui/icons-material/Code';
+//import ReorderIcon from '@mui/icons-material/Reorder';
 
 function NavBar() {
   return (
@@ -28,6 +28,7 @@ function NavBar() {
           edge="start"
           color="inherit"
           aria-label="logo"
+          sx={{ paddingLeft: '40px' }}
         >
           <HomeIcon fontSize="large" />
         </IconButton>
@@ -66,6 +67,7 @@ function NavBar() {
           edge="end"
           color="inherit"
           aria-label="logo"
+          sx={{ paddingRight: '40px' }}
         >
           <GitHubIcon fontSize="large" />
         </IconButton>

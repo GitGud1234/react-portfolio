@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Home.css';
-import { Paper, Grid } from '@mui/material';
+//import { Paper, Grid } from '@mui/material';
 
 function Home() {
   return (
