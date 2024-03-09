@@ -1,10 +1,10 @@
 .projects {
   width: 100%;
-  height: calc(100vh - 64px);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #eee;
 }
 .projects .projectTitle {
   text-align: center;
@@ -14,11 +14,14 @@
 }
 
 .projectList {
-  width: 70vw;
-  height: auto;
+  max-width: 1000px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px; /* Adjust the gap between grid items */
+  justify-items: center;
+  align-items: center;
+  /* border: 2px solid green; */
 }
 
 /* MENU ITEM STYLING */
@@ -54,12 +57,28 @@
 @media only screen and (max-width: 1300px) {
   .projectList {
     grid-template-columns: 1fr 1fr;
+    max-width: 1000px; /* Adjust the maximum width as needed */
+    width: 90%; /* Fallback width for smaller screens */
+    margin: 0 auto; /* Center the grid container horizontally */
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(300px, 1fr)
+    ); /* Adjust the column width as needed */
+    gap: 20px; /* Adjust the gap between grid items */
+    justify-items: center;
+    /* border: 2px solid red; */
   }
 }
 
 @media only screen and (max-width: 800px) {
   .projectList {
     grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .projectItem {
+    width: 300px;
+    height: 300px;
   }
 }
 

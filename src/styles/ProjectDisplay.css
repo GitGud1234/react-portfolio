@@ -1,19 +1,22 @@
 .project {
   width: 100%;
-  height: calc(100vh - 100px);
+  /* height: calc(100vh - 100px); */
+  height: 100vh;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
 }
 
 .project h1 {
-  margin-top: 50px;
+  margin-top: 20px;
   color: #3e497a;
   font-size: 35px;
 }
 .project img {
-  width: 700px;
+  /* width: 500px; */
+  /* min-width: 50%; */
+  max-width: 500px;
   border-radius: 10px;
 }
 

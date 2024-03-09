@@ -4,13 +4,14 @@ import '../styles/Home.css';
 
 function Home() {
   return (
-    <div className="home">
+    <div>
       <div className="landing">
         <h1>Hi, I am Gelmis</h1>
         <div className="prompt">
           <p>
             An <span style={{ color: '#EC8F1B' }}>aspiring developer</span>{' '}
-            trying to break into the tech industry
+            trying to break into the tech industry and make awesome
+            contributions!
           </p>
         </div>
       </div>
